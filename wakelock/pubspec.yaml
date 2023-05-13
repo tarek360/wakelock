@@ -18,7 +18,6 @@ dependencies:
   wakelock_macos: ^0.4.0
   wakelock_platform_interface: ^0.3.0
   wakelock_web: ^0.4.0
-  wakelock_windows: ^0.2.0
 
 dev_dependencies:
   flutter_test:
@@ -37,7 +36,5 @@ flutter:
         pluginClass: WakelockPlugin
       macos:
         default_package: wakelock_macos
-      windows:
-        default_package: wakelock_windows
       web:
         default_package: wakelock_web
