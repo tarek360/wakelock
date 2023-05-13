@@ -36,13 +36,6 @@ WakelockPlatformInterface get _defaultPlatformInstance {
     return WakelockMacOS();
   }
 
-  if (Platform.isWindows) {
-    // This does not feel like the correct way to assign the Windows
-    // implementation, however, the platform channels do not have to be used
-    // thanks to the win32 package. See https://github.com/flutter/flutter/issues/52267.
-    return WakelockWindows();
-  }
-
   return WakelockPlatformInterface.instance;
 }
 
